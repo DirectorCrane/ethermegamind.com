@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Client Portfolio</title>
+  <!-- add to <head> -->
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&family=Russo+One&display=swap" rel="stylesheet">
+
+
+  <!-- Linking external CSS file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+   <!-- HEADER / NAVBAR -->
+<header class="header">
+  <div class="navbar">
+
+    <!-- Floating dots (your effect stays) -->
+    <div id="dots-container"></div>
+
+    <!-- Logo -->
+    <div class="logo">
+      <a href="#home">Ether MegaMind</a>
+    </div>
+
+
+    <!-- Nav Links -->
+
+
+    <nav class="nav-links" id="nav-links">
+    <a href="#home" class="nav-link active">Home</a>
+    <a href="#about-me" class="nav-link">About</a>
+    <a href="#experience" class="nav-link">Experience</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#contact" class="nav-link">Contact</a>
+    <a href="pricing.html" class="nav-link sticky-tab">Pricing</a>
+    <a href="#buy" class="nav-link sticky-tab">Buy Webpage</a>
+    </nav>
+
+    <!-- Mobile Hamburger -->
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+
+
+
+
+  <!-- HERO SECTION -->
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+  <img src="images/CosmicBackground.png" alt="Cosmic Background" class="hero-background">
+  
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Ethan Izaaks</h1>
+
+      <div class="hero-roles">
+        <div class="role">
+        <span class="role-icon">🎨</span>
+        <span class="role-text">UI/UX Developer</span>
+        </div>
+        <div class="role">
+          <span class="role-icon">💻</span>
+          <span class="role-text">Software Engineer</span>
+        </div>
+      </div>
+     
+
+      <p class="hero-desc">
+        Step into my digital universe, where I craft stunning websites, dynamic web apps, 
+        and immersive experiences that make your brand shine.
+      </p>
+
+      <div class="typewriter-container">
+      <div class="typewriter">
+      <span class="typewriter-text"></span>
+      <span class="cursor">|</span>
+      </div>
+      </div>
+
+      <!-- BUTTON NOW PERFECTLY CENTERED -->
+      <a href="#artwork" class="hero-btn" id="hero-btn">
+        Explore Artwork
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<!-- ABOUT SECTION -->
+<section id="about-me" class="about-section" id="about-me">
+  <div class="about-inner">
+
+    <!-- LEFT SIDE TEXT -->
+    <div class="about-text">
+      
+      <h2 class="about-title glow-line">
+        Webpages that Bring Users Together
+      </h2>
+
+      <p class="about-lead glow-line">
+        I design professional webpages and apps that blend beautiful visuals with rock-solid engineering. 
+        My sites feature responsive layouts, moving artwork and subtle micro-interactions so users enjoy 
+        a seamless, immersive experience.
+      </p>
+
+      <div class="glow-line about-body">
+        I build frontends with modern JavaScript (vanilla, React, or frameworks you prefer), craft animations 
+        that enhance — not distract — and integrate solid backend and data solutions. My toolset includes 
+        JavaScript, Node, Firebase, Webflow for fast prototypes, and creative tools like Illustrator, 
+        Figma and Photoshop for pixel-perfect visuals.
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE IMAGE -->
+    <div class="about-frame">
+      <div class="frame">
+        <img src="images/crane.jpg" alt="Your Name" class="profile-photo" />
+        <canvas id="artwork-canvas" class="artwork-canvas" width="420" height="420"></canvas>
+        
+        <div class="photo-label">
+          Ethan <span>— UI/UX Software Engineer</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- WORK EXPERIENCE SECTION -->
+<section id="experience" class="experience-section"id="experience">
+  <div class="container">
+
+<!-- TITLE + ARTWORK LEFT & RIGHT -->
+    <div class="experience-header">
+      <img src="images/ArtWork.png" alt="Left Art" class="work-art left-art">
+      
+      <h1 class="experience-title">Work Experience</h1>
+      
+      <img src="images/Artwork2.png" alt="Right Art" class="work-art right-art">
+    </div>
+
+    <div class="experience-timeline">
+
+      <!-- JOB 1 -->
+      <div class="experience-item" data-aos="fade-up">
+        <div class="timeline-dot"></div>
+        <div class="experience-card">
+          <div class="company-logo">
+            <img src="images/logo.png" alt="Afrika Beats" onerror="this.style.display='none'">
+          </div>
+          <div class="exp-content">
+            <h2 class="exp-role">UI/UX Designer & Web Developer</h2>
+            <h3 class="exp-company">Cranes Airport Transfers and Tours — Namibia</h3>
+            <p class="exp-years">2020 – Present</p>
+            <p class="exp-desc">
+              Designed and developed modern webpage with animated cosmic themes, built smooth interfaces, 
+              optimized user journeys, and worked closely with creators to bring their vision to life with 
+              moving artwork, micro-interactions, and clean, high-performance layouts.
+            </p>
+            <a href="https://jjtec.org/" target="_blank" class="visit-link">
+              Visit Website
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- JOB 2 -->
+      <div class="experience-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="timeline-dot"></div>
+        <div class="experience-card">
+          <div class="company-logo">
+            <img src="images/esellNam.png" alt="Freelance" onerror="this.style.display='none'">
+          </div>
+          <div class="exp-content">
+            <h2 class="exp-role">Web maintenance</h2>
+            <h3 class="exp-company">Esell Namibia</h3>
+            <p class="exp-years">2022 – 2023</p>
+            <p class="exp-desc">
+              Mantain the webpage by uploading Images for Users to view Items placed for Buying and selling
+            </p>
+            <a href="https://esellnamibia.com/" target="_blank" class="visit-link">
+              Visit Website
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- JOB 3 -->
+      <div class="experience-item" data-aos="fade-up" data-aos-delay="200">
+        <div class="timeline-dot"></div>
+        <div class="experience-card">
+          <div class="company-logo">
+            <img src="images/jj.png" alt="Creative Visual Studio" onerror="this.style.display='none'">
+          </div>
+          <div class="exp-content">
+            <h2 class="exp-role">Graphic Designer</h2>
+            <h3 class="exp-company">JJJ Solutions</h3>
+            <p class="exp-years">2019 – 2021</p>
+            <p class="exp-desc">
+              Produced high-impact graphics, brand identities, posters, logos, and visual systems using 
+              Illustrator, Figma, and Photoshop. Developed consistent brand storytelling for clients across industries.
+            </p>
+            <a href="https://jjtec.org/" target="_blank" class="visit-link">
+              Visit Website
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ARTWORK / PROJECTS SECTION -->
+<section id="projects" class="artwork-section" id="projects">
+  <div class="artwork-container">
+
+    <h1 class="artwork-title">Artwork</h1>
+    <p class="artwork-intro">
+      Selected artworks showcasing UI/UX design, web engineering, and brand storytelling — 
+      crafted with modern African rhythms and youthful tech energy to inspire connection and creativity.
+    </p>
+
+    <!-- FILTER BUTTONS -->
+ 
+
+    <!-- PROJECT GRID -->
+    <div class="art-grid" id="artGrid">
+      <div class="art-card" data-category="ui">
+        <img src="images/CranesAirport.PNG" alt="Cranes Airport UI Case Study">
+        <div class="art-overlay">
+          <h3>Cranes Airport Transfer</h3>
+          <p>UI/UX Design • Web App</p>
+          <a href="#" class="view-project">View Project</a>
+        </div>
+      </div>
+
+      <div class="art-card" data-category="branding">
+        <img src="images/art2.jpg" alt="Ubuntu Brand Identity">
+        <div class="art-overlay">
+          <h3>Butter Glow Media & Enterainment</h3>
+          <p>UI/UX Design • Web Page</p>
+          <a href="#" class="view-project">View Project</a>
+        </div>
+      </div>
+
+      <div class="art-card" data-category="mobile">
+        <img src="images/art3.jpg" alt="Flow Mobile App">
+        <div class="art-overlay">
+          <h3>Portal.Africa COMING SOON</h3>
+          <p>Mobile App • iOS & Android</p>
+          <a href="#" class="view-project">View Project</a>
+        </div>
+      </div>
+
+      <div class="art-card" data-category="logos">
+        <img src="images/art4.jpg" alt="Sankofa Logo Design">
+        <div class="art-overlay">
+          <h3>Sankofa</h3>
+          <p>Logo Design • Symbolism</p>
+          <a href="#" class="view-project">View Project</a>
+        </div>
+      </div>
+
+      <!-- Add more cards here -->
+    </div>
+  </div>
+
+  <!-- Subtle animated background orbs -->
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+</section>
+
+
+
+<!-- SKILLS SECTION --> 
+<section class="skills-section" id="skills">
+  <h1 class="section-title">Technical Skills</h1>
+
+  <div class="skills-grid">
+
+    <!-- DEVELOPMENT BOX - Cyan Loop -->
+    <div class="skill-box" data-color="#00ffff">
+      <h2>Development</h2>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python">
+        <span>Python</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript">
+        <span>JavaScript</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java">
+        <span>Java</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" alt="SQL">
+        <span>SQL</span>
+      </div>
+    </div>
+
+    <!-- DESIGN BOX - Purple Loop -->
+    <div class="skill-box" data-color="#d4a5ff">
+      <h2>Design</h2>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/illustrator/illustrator-plain.svg" alt="Illustrator">
+        <span>Illustrator</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-plain.svg" alt="Photoshop">
+        <span>Photoshop</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma">
+        <span>Figma</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xd/xd-plain.svg" alt="Adobe XD">
+        <span>Adobe XD</span>
+      </div>
+    </div>
+
+    <!-- TOOLS BOX - Green Loop -->
+    <div class="skill-box" data-color="#39ff14">
+      <h2>Tools</h2>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webflow/webflow-original.svg" alt="Webflow">
+        <span>Webflow</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" alt="Firebase">
+        <span>Firebase</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/salesforce/salesforce-original.svg" alt="Salesforce">
+        <span>Salesforce</span>
+      </div>
+      <div class="skill-item">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/checkmarx.svg" alt="Data Integrity">
+        <span>Data Integrity</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer" id="contact">
+  <div class="footer-inner">
+
+    <div class="footer-left">
+      <h2>We are a Click of a Button Away Send a Dove</h2>
+      <p class="footer-sub"> —Let’s build something amazing together, We are Ready To Work To Craft. Tell us More about your Project </p>
+
+      <div class="contact-list">
+        <div class="contact-item">
+          <!-- phone icon (SVG) -->
+          <svg class="icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path fill="currentColor" d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 22 2 13.93 2 3.5A1 1 0 013 2.5H6.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57.14.4.04.84-.24 1.01l-2.2 2.2z"/>
+          </svg>
+          <a href="tel:+1234567890">+264 81 256 4987</a>
+        </div>
+
+        <div class="contact-item">
+          <!-- email icon -->
+          <svg class="icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path fill="currentColor" d="M20 4H4a2 2 0 00-2 2v0c0 .55.45 1 1 1h18a1 1 0 001-1v0a2 2 0 00-2-2zM3 7.3V18a2 2 0 002 2h14a2 2 0 002-2V7.3l-9 5.06L3 7.3z"/>
+          </svg>
+          <a href="mailto:youremail@example.com">developer@ethermegamind.com</a>
+        </div>
+
+        <div class="contact-item">
+          <!-- linkedin icon -->
+          <svg class="icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path fill="currentColor" d="M4.98 3.5A2.5 2.5 0 002.5 6v12A2.5 2.5 0 004.98 20.5h0A2.5 2.5 0 007.5 18V6A2.5 2.5 0 004.98 3.5zM8 8H5v9h3V8zM14 8h-2.8v9H14v-4.9c0-1.9 2.4-2.1 2.4 0V17H19v-6.6C19 6.6 14 7 14 8z"/>
+          </svg>
+          <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+        </div>
+
+        <div class="contact-item">
+          <!-- github -->
+          <svg class="icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path fill="currentColor" d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.77.6-3.36-1.34-3.36-1.34-.45-1.17-1.11-1.48-1.11-1.48-.9-.62.07-.6.07-.6 1 .07 1.53 1.02 1.53 1.02.89 1.52 2.34 1.08 2.91.82.09-.64.35-1.08.63-1.33-2.21-.25-4.53-1.11-4.53-4.95 0-1.09.39-1.98 1.02-2.68-.1-.25-.45-1.28.1-2.67 0 0 .83-.27 2.75 1.02A9.54 9.54 0 0112 6.8c.84.004 1.68.114 2.47.334 1.92-1.29 2.75-1.02 2.75-1.02.56 1.39.21 2.42.1 2.67.63.7 1.02 1.59 1.02 2.68 0 3.85-2.32 4.7-4.53 4.95.36.31.68.92.68 1.85v2.74c0 .26.18.57.69.48A10 10 0 0012 2z"/>
+          </svg>
+          <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-right">
+      <form class="contact-form" action="https://formspree.io/f/xzzngwvv" method="POST">
+        
+        <label class="field">
+          <input type="text" name="name" placeholder="Your name" required>
+        </label>
+
+        <label class="field">
+          <input type="email" name="_replyto" placeholder="Your email" required>
+        </label>
+
+        <label class="field">
+          <textarea name="message" placeholder="Tell me more about the project" rows="5" required></textarea>
+        </label>
+
+        <!-- Anti-spam honeypot -->
+        <input type="text" name="_gotcha" style="display:none">
+
+        <button type="submit" class="btn-send">
+          Send Dove
+        </button>
+      </form>
+
+      <!-- Success / Error Message -->
+      <div class="form-message" id="form-message"></div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Ethan Randall Izaaks. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+
+<!-- WHATSAPP STICKY BUTTON -->
+<a href="https://wa.me/264816254987" class="whatsapp-btn">
+  <img src="images/WhatsApp.png" alt="WhatsApp" class="whatsapp-icon">
+</a>
+
+
+<script>
+// Mobile menu
+document.getElementById('hamburger').addEventListener('click', () => {
+  document.getElementById('hamburger').classList.toggle('active');
+  document.getElementById('nav-links').classList.toggle('active');
+});
+
+// Active link on scroll
+window.addEventListener('scroll', () => {
+  let current = '';
+  const sections = document.querySelectorAll('section[id]');
+
+  sections.forEach(sec => {
+    if (window.scrollY >= sec.offsetTop - 100) {
+      current = sec.getAttribute('id');
+    }
+  });
+
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === `#${current}`) {
+      link.classList.add('active');
+    }
+  });
+});
+
+// Smooth scroll (fallback if browser doesn't support)
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+</script>
+
+
+
+
+<script>
+const navDotsContainer = document.getElementById('dots-container');
+const numberOfDots = 30; // smaller number for nav bar
+
+
+for (let i = 0; i < numberOfDots; i++) {
+const dot = document.createElement('div');
+dot.classList.add('dot');
+
+
+// Random initial position inside nav-dots container
+dot.style.left = Math.random() * navDotsContainer.offsetWidth + 'px';
+dot.style.top = Math.random() * navDotsContainer.offsetHeight + 'px';
+
+
+// Random animation duration and delay for natural float
+const duration = 2 + Math.random() * 3; // 2s to 5s
+const delay = Math.random() * 2; // 0s to 2s
+dot.style.animationDuration = duration + 's';
+dot.style.animationDelay = delay + 's';
+
+
+// Random size variation
+const size = Math.random() * 2 + 1; // 1px to 3px
+dot.style.width = size + 'px';
+dot.style.height = size + 'px';
+
+
+navDotsContainer.appendChild(dot);
+}
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const heroBtn = document.getElementById('hero-btn');
+  if (!heroBtn) return; // safety
+
+  const numberOfDots = 18; // number of dots
+
+  for (let i = 0; i < numberOfDots; i++) {
+    const dot = document.createElement('div');
+    dot.classList.add('btn-dot');
+
+    // Tiny size: 1–2px
+    const size = 1 + Math.random() * 1; // 1–2px
+    dot.style.width = size + 'px';
+    dot.style.height = size + 'px';
+
+    // Random position inside button
+    const maxX = heroBtn.offsetWidth - size;
+    const maxY = heroBtn.offsetHeight - size;
+    dot.style.left = Math.random() * maxX + 'px';
+    dot.style.top = Math.random() * maxY + 'px';
+
+    // Random speed & delay for natural feel
+    const duration = 4 + Math.random() * 6; // 4–10s
+    const delay = Math.random() * 5;
+    dot.style.animation = `floatBtnDot ${duration}s infinite ease-in-out ${delay}s`;
+
+    heroBtn.appendChild(dot);
+  }
+});
+</script>
+
+<script>
+// ABOUT: moving artwork overlay (canvas)
+document.addEventListener('DOMContentLoaded', () => {
+  const canvas = document.getElementById('artwork-canvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+
+  // match canvas to element size
+  function resizeCanvas() {
+    const rect = canvas.getBoundingClientRect();
+    canvas.width = rect.width * devicePixelRatio;
+    canvas.height = rect.height * devicePixelRatio;
+    canvas.style.width = rect.width + 'px';
+    canvas.style.height = rect.height + 'px';
+    ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);
+  }
+  resizeCanvas();
+  window.addEventListener('resize', resizeCanvas);
+
+  // particle system
+  const particles = [];
+  const PARTICLE_COUNT = 26;
+  const W = canvas.width / devicePixelRatio;
+  const H = canvas.height / devicePixelRatio;
+
+  for (let i=0;i<PARTICLE_COUNT;i++){
+    particles.push({
+      x: Math.random()*W,
+      y: Math.random()*H,
+      r: 6 + Math.random()*12,
+      vx: (Math.random()-0.5)*0.25,
+      vy: (Math.random()-0.5)*0.25,
+      alpha: 0.05 + Math.random()*0.14,
+      hue: 250 + Math.random()*60 // purple-blue shades
+    });
+  }
+
+  function draw(){
+    // semi-transparent background for motion blur trail
+    ctx.clearRect(0,0,W,H);
+
+    particles.forEach(p => {
+      p.x += p.vx;
+      p.y += p.vy;
+
+      // wrap
+      if (p.x < -50) p.x = W + 50;
+      if (p.x > W +50) p.x = -50;
+      if (p.y < -50) p.y = H + 50;
+      if (p.y > H +50) p.y = -50;
+
+      // radial gradient
+      const g = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.r);
+      g.addColorStop(0, `hsla(${p.hue}, 90%, 70%, ${p.alpha})`);
+      g.addColorStop(0.5, `hsla(${p.hue}, 90%, 60%, ${p.alpha*0.35})`);
+      g.addColorStop(1, `hsla(${p.hue}, 90%, 45%, 0)`);
+      ctx.fillStyle = g;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
+      ctx.fill();
+    });
+
+    requestAnimationFrame(draw);
+  }
+  draw();
+});
+</script>
+
+
+<script>
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelector('.filter-btn.active').classList.remove('active');
+    btn.classList.add('active');
+    
+    const filter = btn.dataset.filter;
+    document.querySelectorAll('.art-card').forEach(card => {
+      if (filter === 'all' || card.dataset.category === filter) {
+        card.style.display = 'block';
+        setTimeout(() => card.style.opacity = 1, 50);
+      } else {
+        card.style.opacity = 0;
+        setTimeout(() => card.style.display = 'none', 400);
+      }
+    });
+  });
+});
+</script>
+
+<script>
+const text = "THE BEST WAY TO PREDICT THE FUTURE IS TO CREATE IT";
+const typewriterText = document.querySelector(".typewriter-text");
+let i = 0;
+
+function typeWriter() {
+  if (i < text.length) {
+    typewriterText.textContent += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, 80); // speed (lower = faster)
+  } else {
+    // Restart after 3 seconds pause
+    setTimeout(() => {
+      typewriterText.textContent = "";
+      i = 0;
+      typeWriter();
+    }, 3000);
+  }
+}
+
+// Start when page loads
+window.addEventListener("load", typeWriter);
+</script>
+
+<script>
+// Form success message
+const form = document.querySelector('.contact-form');
+const messageDiv = document.getElementById('form-message');
+
+if (form) {
+  form.addEventListener('submit', function() {
+    messageDiv.innerHTML = '<p style="color:#00ffff; margin-top:15px;">Sending your dove...</p>';
+  });
+}
+
+// Check URL for Formspree response
+if (window.location.search.includes('success')) {
+  messageDiv.innerHTML = '<p style="color:#39ff14; font-weight:bold;">Dove delivered! I\'ll reply within 24 hours</p>';
+}
+if (window.location.search.includes('error')) {
+  messageDiv.innerHTML = '<p style="color:#ff3366;">Oops! Dove got lost. Try again or email me directly.</p>';
+}
+</script>
+
+
+
+
+</body>
+</html>
+
+<!--
+Next step:
+Create /css/style.css file and paste all CSS from previous version.
+-->
