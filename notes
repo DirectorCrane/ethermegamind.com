@@ -76,3 +76,5 @@ body { font-family: 'Manrope', 'Satoshi', sans-serif; background: #000; color: w
 .orb-2 { width: 600px; height: 600px; background: #00ffff; bottom: -10%; right: -10%; animation-delay: 8s; }
 .orb-3 { width: 700px; height: 700px; background: #39ff14; top: 40%; left: 50%; animation-delay: 15s; }
 @keyframes float { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(100px, -80px) scale(1.2); } }
+
+
