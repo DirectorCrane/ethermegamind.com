@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Client Portfolio</title>
   <!-- add to <head> -->
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&family=Russo+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&family=Russo+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
 
 
   <!-- Linking external CSS file -->
@@ -18,25 +19,40 @@
   <div class="navbar">
 
     <!-- Floating dots (your effect stays) -->
-    <div id="dots-container"></div>
+    <div class="floating-dots-container"></div>
 
     <!-- Logo -->
-    <div class="logo">
-      <a href="#home">Ether MegaMind</a>
-    </div>
+  <div class="logo">
+  <a href="#home" class="logo-link">
+    <img src="images/etherLogo.png" alt="Ether MegaMind Logo" class="logo-img">
+  </a>
+  </div>
 
 
     <!-- Nav Links -->
 
 
     <nav class="nav-links" id="nav-links">
-    <a href="#home" class="nav-link active">Home</a>
-    <a href="#about-me" class="nav-link">About</a>
-    <a href="#experience" class="nav-link">Experience</a>
-    <a href="#projects" class="nav-link">Projects</a>
-    <a href="#skills" class="nav-link">Skills</a>
-    <a href="#contact" class="nav-link">Contact</a>
-    <a href="pricing.html" class="nav-link sticky-tab">Pricing</a>
+      <div class="nav-divider"></div>
+    <a href="#home" class="nav-link active">HOME</a>
+    <a href="#about-me" class="nav-link">ABOUT</a>
+    <a href="#experience" class="nav-link">EXPERIENCE</a>
+    <a href="#projects" class="nav-link">PROJECTS</a>
+    <a href="#skills" class="nav-link">SKILLS</a>
+    <a href="#contact" class="nav-link">CONTACT</a>
+    <div class="nav-item mega-dropdown">
+    <a href="#Pricing" class="nav-link sticky-tab">Pricing</a>
+
+  <!-- FULL WIDTH DROPDOWN BAR -->
+    <div class="mega-menu">
+    <div class="mega-menu-inner">
+    <a href="pricing.html#web-design">Web Design</a>
+    <a href="email.html">Email Hosting</a>
+    <a href="graphic.html">Graphic Design</a>
+    </div>
+    </div>
+    </div>
+
     
     </nav>
 
@@ -175,7 +191,7 @@
             <p class="exp-desc">
               Designed clean websites with smooth animations and improved user flow.
             </p>
-            <a href="#" target="_blank" class="visit-link">Visit Website</a>
+            <a href="https://cranesairporttransfers.com" target="_blank" class="visit-link">Visit Website</a>
           </div>
         </div>
       </div>
@@ -242,8 +258,8 @@
         <img src="images/CranesAirport.PNG" alt="Cranes Airport UI Case Study">
         <div class="art-overlay">
           <h3>Cranes Airport Transfer</h3>
-          <p>UI/UX Design • Web App</p>
-          <a href="#" class="view-project">View Project</a>
+          <p>UI/UX Design • WebPage</p>
+          <a href="https://cranesairporttransfers.com" class="view-project">View Project</a>
         </div>
       </div>
 
@@ -413,7 +429,7 @@
         </label>
 
         <label class="field">
-          <textarea name="message" placeholder="Tell me more about the project" rows="5" required></textarea>
+          <textarea name="message" placeholder="Tell me more about your project" rows="5" required></textarea>
         </label>
 
         <!-- Anti-spam honeypot -->
@@ -431,7 +447,7 @@
   </div>
 
   <div class="footer-bottom">
-    <p>© 2025 Ethan Randall Izaaks. All Rights Reserved.</p>
+    <p>© 2025 Ether Mega Mind. All Rights Reserved.</p>
   </div>
 </footer>
 
@@ -456,47 +472,86 @@ hamburger.addEventListener("click", () => {
 
 // AUTO CLOSE MENU WHEN ANY LINK IS CLICKED
 document.querySelectorAll(".nav-links a").forEach(link => {
-  link.addEventListener("click", () => {
+  link.addEventListener("click", (e) => {
+    if (link.closest(".mega-dropdown")) return; // ⛔ do NOT close on Pricing
     navLinks.classList.remove("show");
     hamburger.classList.remove("active");
   });
 });
+
+
 </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const pricingLink = document.querySelector(".mega-dropdown > a");
+    const megaDropdown = document.querySelector(".mega-dropdown");
+
+    pricingLink.addEventListener("click", (e) => {
+      // stop page navigation on mobile
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        megaDropdown.classList.toggle("active");
+      }
+    });
+  });
+</script>
+
 
 
 
 
 <script>
-const navDotsContainer = document.getElementById('dots-container');
-const numberOfDots = 30; // smaller number for nav bar
+document.addEventListener('DOMContentLoaded', () => {
+  const container = document.querySelector('.floating-dots-container');
+  if (!container) return;
 
+  const DOT_COUNT = 35;  // ← adjust for density
 
-for (let i = 0; i < numberOfDots; i++) {
-const dot = document.createElement('div');
-dot.classList.add('dot');
+  for (let i = 0; i < DOT_COUNT; i++) {
+    const dot = document.createElement('div');
+    dot.className = 'floating-dot';
 
+    // Random size: 1–4px
+    const size = 1 + Math.random() * 3;
+    dot.style.width = size + 'px';
+    dot.style.height = size + 'px';
 
-// Random initial position inside nav-dots container
-dot.style.left = Math.random() * navDotsContainer.offsetWidth + 'px';
-dot.style.top = Math.random() * navDotsContainer.offsetHeight + 'px';
+    // Random starting position inside navbar
+    dot.style.left = Math.random() * 100 + '%';
+    dot.style.top = Math.random() * 100 + '%';
 
+    // Random drift distance & scale
+    const dx = (Math.random() - 0.5) * 300;   // -150 to +150px horizontal
+    const dy = (Math.random() - 0.5) * 200;   // -100 to +100px vertical
+    const scale = 0.8 + Math.random() * 0.6;  // 0.8–1.4
 
-// Random animation duration and delay for natural float
-const duration = 2 + Math.random() * 3; // 2s to 5s
-const delay = Math.random() * 2; // 0s to 2s
-dot.style.animationDuration = duration + 's';
-dot.style.animationDelay = delay + 's';
+    dot.style.setProperty('--dx', dx + 'px');
+    dot.style.setProperty('--dy', dy + 'px');
+    dot.style.setProperty('--scale', scale);
 
+    // Random duration: 15–35 seconds for slow, dreamy float
+    const duration = 15 + Math.random() * 20;
+    dot.style.animationDuration = duration + 's';
 
-// Random size variation
-const size = Math.random() * 2 + 1; // 1px to 3px
-dot.style.width = size + 'px';
-dot.style.height = size + 'px';
+    // Random delay for staggered start
+    dot.style.animationDelay = Math.random() * 5 + 's';
 
+    container.appendChild(dot);
 
-navDotsContainer.appendChild(dot);
-}
+    // Random heartbeat speed (2.5s – 5s)
+    const heartbeatDuration = 2.5 + Math.random() * 2.5;
+    dot.style.animationDuration = duration + 's, ' + heartbeatDuration + 's';
+
+    // Random heartbeat delay
+    dot.style.animationDelay =
+    Math.random() * 5 + 's, ' +
+    Math.random() * 3 + 's';
+  }
+});
 </script>
+
+
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
